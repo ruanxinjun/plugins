@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+<script type="text/javascript" src="province_city_town.js"></script>	
+<script type="text/javascript">
+	window.onload  = function(){
+		PROVINCE_CITY_TOWN.Binds('province','city','town',function(e){
+			console.log(e);
+		});
+	};	
+</script>
+</head>
+<body>
+	<select id="province"></select>
+	<select id="city"></select>
+	<select id="town"></select>
+</body>
+</html>
