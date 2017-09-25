@@ -16,5 +16,17 @@
 	<select id="province"></select>
 	<select id="city"></select>
 	<select id="town"></select>
+
+
+<button onclick="getData()">press it</button>
+<script src="SIMPLE_AJAX.js"></script>
+<script type="text/javascript">
+function getData(){
+	var url = 'http://127.0.0.1:3000?type=3&pid=1&cid=124&t='+Math.random();
+	MYAJAX.SEND('GET',url,function(data){
+		alert(JSON.parse(data));
+	});
+}	
+</script>
 </body>
 </html>
